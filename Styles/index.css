@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', 'Barlow', sans-serif;
+
+  background-color: var(--Grey-100);
+}
+
+:root {
+
+  /* ## Colors */
+
+  /* Primary */
+
+  --purple-50: hsl(260, 100%, 95%);
+  --Purple-300: hsl(264, 82%, 80%);
+  --purple-500: hsl(263, 55%, 52%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Grey-100: hsl(214, 17%, 92%);
+  --Grey-200: hsl(0, 0%, 81%);
+  --Grey-400: hsl(224, 10%, 45%);
+  --Grey-500: hsl(217, 19%, 35%);
+  --Dark-blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+
+  /* WEIGHT */
+
+  --weight-500: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+
+}
+
+img {
+  border-radius: 2rem;
+}
+
+h4 {
+  font-weight: var(--weight-500);
+}
+
+h5 {
+  font-weight: var(--weight-400);
+}
+
+h3 {
+  font-weight: var(--weight-400);
+  color: var(--Grey-100);
+}
+
+h2 {
+  font-weight: var(--weight-600);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card1 h2, 
+.card2 h2, 
+.card4 h2 {
+  color: var(--White);
+}
+
+.card3 h2, 
+.card5 h2, 
+.card3 h4, 
+.card5 h4 {
+  color: var(--Grey-500);
+}
+
+.card3 h3,
+.card5 h3,
+.card3 h5,
+.card5 h5 {
+  color: var(--Grey-400);
+}
+
+.card3,
+.card5 {
+  background-color: var(--White);
+}
+
+/* CARD 1 STYLE */
+.card1 {
+  background: var(--purple-500)
+}
+
+.card1 h4 {
+  color: var(--White);
+}
+
+.card1 h5 {
+  color: var(--Grey-100);
+}
+
+.card1 img {
+  border-style: solid;
+  border-color: var(--Purple-300);
+}
+
+/*  CARD 2 STYLE */
+.card2 {
+  background-color: var(--Grey-500);
+}
+
+.card2 h4 {
+  color: var(--Grey-100);
+}
+
+.card2 h5 {
+  color: var(--Grey-200);
+}
+
+.card2 img {
+  border-style: solid;
+  border-color: var(--purple-50);
+}
+
+/* CARD 4 STYLE */
+.card4 h5 {
+  color: var(--Grey-200);
+}
+
+.card4 {
+  background-color: var(--Dark-blue);
+}
+
+.card4 h4 {
+  color: var(--White);
+}
+
+.card4 img {
+  border-style: solid;
+  border-color: var(--purple-500);
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
